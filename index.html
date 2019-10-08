@@ -1,0 +1,267 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="text-align-center"><i class="fas fa-calculator"></i>Tebak tanggal lahir</h1>
+
+    <!-- TANGGAL -->
+
+    <p id="question" class="text-align-center">
+      Apakah <span id="Date">tanggal</span> lahirmu ada di sini ?
+    </p>
+    <div id="table">
+      <!-- Tabel 1 -->
+      <div id="tanggal1" class="text-align-center">
+        <p>Pertanyaan 1 - Tanggal</p>
+        <img src="./img/tanggal/tanggal_seri_A.JPG" alt="" id="image" />
+        <div class="container-button margin-top-10px">
+          <button onclick="button1TanggalYa()">YA</button>
+          <button onclick="button1TanggalTidak()">TIDAK</button>
+        </div>
+      </div>
+
+      <!-- Tabel 2 -->
+      <div id="tanggal2" class="text-align-center">
+        <p>Pertanyaan 2 - Tanggal</p>
+        <img src="./img/tanggal/tanggal_seri_B.JPG" alt="" />
+        <div class="container-button margin-top-10px">
+          <button onclick="button2TanggalYa()">YA</button>
+          <button onclick="button2TanggalTidak()">TIDAK</button>
+        </div>
+      </div>
+
+      <!-- Tabel 3 -->
+      <div id="tanggal3" class="text-align-center">
+        <p>Pertanyaan 3 - Tanggal</p>
+        <img src="./img/tanggal/tanggal_seri_C.JPG" alt="" />
+        <div class="container-button margin-top-10px">
+          <button onclick="button3TanggalYa()">YA</button>
+          <button onclick="button3TanggalTidak()">TIDAK</button>
+        </div>
+      </div>
+
+      <!-- Tabel 4 -->
+      <div id="tanggal4" class="text-align-center">
+        <p>Pertanyaan 4 - Tanggal</p>
+        <img src="./img/tanggal/tanggal_seri_D.JPG" alt="" />
+        <div class="container-button margin-top-10px">
+          <button onclick="button4TanggalYa()">YA</button>
+          <button onclick="button4TanggalTidak()">TIDAK</button>
+        </div>
+      </div>
+
+      <!-- Table 5 -->
+      <div id="tanggal5" class="text-align-center">
+        <p>Pertanyaan 5 - Tanggal</p>
+        <img src="./img/tanggal/tanggal_seri_E.JPG" alt="" />
+        <div class="container-button margin-top-10px">
+          <button onclick="button5TanggalYa()">YA</button>
+          <button onclick="button5TanggalTidak()">TIDAK</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- BULAN -->
+
+    <!-- Tabel 1 -->
+    <div id="bulan1" class="text-align-center">
+      <p>Pertanyaan 1 - Bulan</p>
+      <img src="./img/bulan/bulan_seri_A.JPG" alt="" />
+      <div class="container-button margin-top-10px">
+        <button onclick="button1BulanYa()">YA</button>
+        <button onclick="button1BulanTidak()">TIDAK</button>
+      </div>
+    </div>
+
+    <!-- Tabel 2 -->
+    <div id="bulan2" class="text-align-center">
+      <p>Pertanyaan 2 - Bulan</p>
+      <img src="./img/bulan/bulan_seri_B.JPG" alt="" />
+      <div class="container-button margin-top-10px">
+        <button onclick="button2BulanYa()">YA</button>
+        <button onclick="button2BulanTidak()">TIDAK</button>
+      </div>
+    </div>
+
+    <!-- Tabel 3 -->
+    <div id="bulan3" class="text-align-center">
+      <p>Pertanyaan 3 - Bulan</p>
+      <img src="./img/bulan/bulan_seri_C.JPG" alt="" />
+      <div class="container-button margin-top-10px">
+        <button onclick="button3BulanYa()">YA</button>
+        <button onclick="button3BulanTidak()">TIDAK</button>
+      </div>
+    </div>
+
+    <!-- Table 4 -->
+    <div id="bulan4" class="text-align-center">
+      <p>Pertanyaan 4 - Bulan</p>
+      <img src="./img/bulan/bulan_seri_D.JPG" alt="" />
+      <div class="container-button margin-top-10px">
+        <button onclick="button4BulanYa()">YA</button>
+        <button onclick="button4BulanTidak()">TIDAK</button>
+      </div>
+    </div>
+
+    <!-- TAHUN 2  ANGKA PERTAMA-->
+
+    <!-- Table 1 -->
+    <div id="tahun1" class="text-align-center">
+      <p>Pertanyaan 1 - Tahun</p>
+      <img src="./img/tahun/tahun_seri_A.JPG" alt="" />
+      <div class="container-button margin-top-10px">
+        <button onclick="button1TahunYa()">YA</button>
+        <button onclick="button1TahunTidak()">TIDAK</button>
+      </div>
+    </div>
+
+    <!-- Table 2 -->
+    <div id="tahun2" class="text-align-center">
+      <p>Pertanyaan 2 - Tahun</p>
+      <img src="./img/tahun/tahun_seri_B.JPG" alt="" />
+      <div class="container-button margin-top-10px">
+        <button onclick="button2TahunYa()">YA</button>
+        <button onclick="button2TahunTidak()">TIDAK</button>
+      </div>
+    </div>
+
+    <!-- Table 3 -->
+    <div id="tahun3" class="text-align-center">
+      <p>Pertanyaan 3 - Tahun</p>
+      <img src="./img/tahun/tahun_seri_C.JPG" alt="" />
+      <div class="container-button margin-top-10px">
+        <button onclick="button3TahunYa()">YA</button>
+        <button onclick="button3TahunTidak()">TIDAK</button>
+      </div>
+    </div>
+
+    <!-- Table 4 -->
+    <div id="tahun4" class="text-align-center">
+      <p>Pertanyaan 4 - Tahun</p>
+      <img src="./img/tahun/tahun_seri_D.JPG" alt="" />
+      <div class="container-button margin-top-10px">
+        <button onclick="button4TahunYa()">YA</button>
+        <button onclick="button4TahunTidak()">TIDAK</button>
+      </div>
+    </div>
+
+    <!-- Table 5 -->
+    <div id="tahun5" class="text-align-center">
+      <p>Pertanyaan 5 - Tahun</p>
+      <img src="./img/tahun/tahun_seri_E.JPG" alt="" />
+      <div class="container-button margin-top-10px">
+        <button onclick="button5TahunYa()">YA</button>
+        <button onclick="button5TahunTidak()">TIDAK</button>
+      </div>
+    </div>
+
+    <!-- Table 6 -->
+    <div id="tahun6" class="text-align-center">
+      <p>Pertanyaan 6 - Tahun</p>
+      <img src="./img/tahun/tahun_seri_F.JPG" alt="" />
+      <div class="container-button margin-top-10px">
+        <button onclick="button6TahunYa()">YA</button>
+        <button onclick="button6TahunTidak()">TIDAK</button>
+      </div>
+    </div>
+
+    <!-- Table 7 -->
+    <div id="tahun7" class="text-align-center">
+      <p>Pertanyaan 7 - Tahun</p>
+      <img src="./img/tahun/tahun_seri_G.JPG" alt="" />
+      <div class="container-button margin-top-10px">
+        <button onclick="button7TahunYa()">YA</button>
+        <button onclick="button7TahunTidak()">TIDAK</button>
+      </div>
+    </div>
+
+    <!-- TAHUN 2 ANGKA TERAKHIR -->
+
+    <!-- Table 1 -->
+    <div id="tahun1-2" class="text-align-center">
+      <p>Pertanyaan 8 - Tahun</p>
+      <img src="./img/tahun/tahun_seri_A.JPG" alt="" />
+      <div class="container-button margin-top-10px">
+        <button onclick="button1TahunYa2()">YA</button>
+        <button onclick="button1TahunTidak2()">TIDAK</button>
+      </div>
+    </div>
+
+    <!-- Table 2 -->
+    <div id="tahun2-2" class="text-align-center">
+      <p>Pertanyaan 9 - Tahun</p>
+      <img src="./img/tahun/tahun_seri_B.JPG" alt="" />
+      <div class="container-button margin-top-10px">
+        <button onclick="button2TahunYa2()">YA</button>
+        <button onclick="button2TahunTidak2()">TIDAK</button>
+      </div>
+    </div>
+
+    <!-- Table 3 -->
+    <div id="tahun3-2" class="text-align-center">
+      <p>Pertanyaan 10 - Tahun</p>
+      <img src="./img/tahun/tahun_seri_C.JPG" alt="" />
+      <div class="container-button margin-top-10px">
+        <button onclick="button3TahunYa2()">YA</button>
+        <button onclick="button3TahunTidak2()">TIDAK</button>
+      </div>
+    </div>
+
+    <!-- Table 4 -->
+    <div id="tahun4-2" class="text-align-center">
+      <p>Pertanyaan 11 - Tahun</p>
+      <img src="./img/tahun/tahun_seri_D.JPG" alt="" />
+      <div class="container-button margin-top-10px">
+        <button onclick="button4TahunYa2()">YA</button>
+        <button onclick="button4TahunTidak2()">TIDAK</button>
+      </div>
+    </div>
+
+    <!-- Table 5 -->
+    <div id="tahun5-2" class="text-align-center">
+      <p>Pertanyaan 12 - Tahun</p>
+      <img src="./img/tahun/tahun_seri_E.JPG" alt="" />
+      <div class="container-button margin-top-10px">
+        <button onclick="button5TahunYa2()">YA</button>
+        <button onclick="button5TahunTidak2()">TIDAK</button>
+      </div>
+    </div>
+
+    <!-- Table 6 -->
+    <div id="tahun6-2" class="text-align-center">
+      <p>Pertanyaan 13 - Tahun</p>
+      <img src="./img/tahun/tahun_seri_F.JPG" alt="" />
+      <div class="container-button margin-top-10px">
+        <button onclick="button6TahunYa2()">YA</button>
+        <button onclick="button6TahunTidak2()">TIDAK</button>
+      </div>
+    </div>
+
+    <!-- Table 7 -->
+    <div id="tahun7-2" class="text-align-center">
+      <p>Pertanyaan 14 - Tahun</p>
+      <img src="./img/tahun/tahun_seri_G.JPG" alt="" />
+      <div class="container-button margin-top-10px">
+        <button onclick="button7TahunYa2()">YA</button>
+        <button onclick="button7TahunTidak2()">TIDAK</button>
+      </div>
+    </div>
+
+    <div class="container-button text-align-center margin-top-10px">
+      <input type="button" value="SUBMIT" onclick="onSubmit()" id="submit" />
+      <input
+        type="button"
+        value="RESET"
+        onclick="window.location.reload(false);"
+      />
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

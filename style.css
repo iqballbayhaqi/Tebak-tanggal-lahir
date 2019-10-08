@@ -1,0 +1,89 @@
+* {
+  font-family: 'Viga', sans-serif;
+}
+table,
+tr,
+td {
+  border: 1px solid #000000;
+  margin: 0;
+}
+.text-align-center {
+  text-align: center;
+}
+.margin-top-10px {
+  margin-top: 10px;
+}
+
+#submit {
+  display: none;
+}
+
+#tanggal2 {
+  display: none;
+}
+#tanggal3 {
+  display: none;
+}
+#tanggal4 {
+  display: none;
+}
+#tanggal5 {
+  display: none;
+}
+
+#bulan1 {
+  display: none;
+}
+#bulan2 {
+  display: none;
+}
+#bulan3 {
+  display: none;
+}
+#bulan4 {
+  display: none;
+}
+
+#tahun1 {
+    display: none;
+}
+#tahun2 {
+    display: none;
+}
+#tahun3 {
+    display: none;
+}
+#tahun4 {
+    display: none;
+}
+#tahun5 {
+    display: none;
+}
+#tahun6 {
+    display: none;
+}
+#tahun7 {
+    display: none;
+}
+
+#tahun1-2 {
+    display: none;
+}
+#tahun2-2 {
+    display: none;
+}
+#tahun3-2 {
+    display: none;
+}
+#tahun4-2 {
+    display: none;
+}
+#tahun5-2 {
+    display: none;
+}
+#tahun6-2 {
+    display: none;
+}
+#tahun7-2 {
+    display: none;
+}
