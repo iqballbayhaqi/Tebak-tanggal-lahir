@@ -119,8 +119,8 @@ const namaBulan = () => {
     case 12:
       countBulan = "Desember";
       break;
-      default:
-        countBulan = '"Maaf, Bulan yang dimaksud tidak ada"'
+    default:
+      countBulan = '"Maaf, Bulan yang dimaksud tidak ada"';
   }
 };
 
@@ -407,7 +407,8 @@ const button7TahunYa2 = () => {
   toDoubleZero();
   gabungTahun();
   document.getElementById("tahun7-2").remove();
-  document.getElementById("submit").style.display = "inline-block"
+  document.getElementById("submit").style.display = "inline-block";
+  fungsiTebakHari();
 };
 const button7TahunTidak2 = () => {
   tahunG2 = 0;
@@ -417,13 +418,189 @@ const button7TahunTidak2 = () => {
   toDoubleZero();
   gabungTahun();
   document.getElementById("tahun7-2").remove();
-  document.getElementById("submit").style.display = "inline-block"
+  document.getElementById("submit").style.display = "inline-block";
+  fungsiTebakHari();
+};
+
+// SCRIPT UNTUK MENEBAK NAMA HARI
+// Referensi https://ibnurafisite.wordpress.com/2016/04/06/trik-menebak-hari-lahir-dengan-menggunakan-metode-aljabar/
+
+let tebakHari;
+
+const fungsiTebakHari = () => {
+  let y = parseInt(fixCountTahun);
+  let d;
+  let f = parseInt((y - 1) / 4);
+
+  let jumlahBulanJanuari = 31;
+  let jumlahBulanFebruari = y % 4 == 0 ? 29 : 28;
+  let jumlahBulanMaret = 31;
+  let jumlahBulanApril = 30;
+  let jumlahBulanMei = 31;
+  let jumlahBulanJuni = 30;
+  let jumlahBulanJuli = 31;
+  let jumlahBulanAgustus = 31;
+  let jumlahBulanSeptember = 30;
+  let jumlahBulanOktober = 31;
+  let jumlahBulanNovember = 30;
+  let jumlahBulanDesember = 31;
+
+  switch (countBulan) {
+    case "Januari":
+      d = countTanggal;
+      break;
+    case "Februari":
+      jumlahBulanFebruari = countTanggal;
+      d = jumlahBulanJanuari + jumlahBulanFebruari;
+      break;
+    case "Maret":
+      jumlahBulanMaret = countTanggal;
+      d = jumlahBulanJanuari + jumlahBulanFebruari + jumlahBulanMaret;
+      break;
+    case "April":
+      jumlahBulanApril = countTanggal;
+      d =
+        jumlahBulanJanuari +
+        jumlahBulanFebruari +
+        jumlahBulanMaret +
+        jumlahBulanApril;
+      break;
+    case "Mei":
+      jumlahBulanMei = countTanggal;
+      d =
+        jumlahBulanJanuari +
+        jumlahBulanFebruari +
+        jumlahBulanMaret +
+        jumlahBulanApril +
+        jumlahBulanMei;
+      break;
+    case "Juni":
+      jumlahBulanJuni = countTanggal;
+      d =
+        jumlahBulanJanuari +
+        jumlahBulanFebruari +
+        jumlahBulanMaret +
+        jumlahBulanApril +
+        jumlahBulanMei +
+        jumlahBulanJuni;
+      break;
+    case "Juli":
+      jumlahBulanJuli = countTanggal;
+      d =
+        jumlahBulanJanuari +
+        jumlahBulanFebruari +
+        jumlahBulanMaret +
+        jumlahBulanApril +
+        jumlahBulanMei +
+        jumlahBulanJuni +
+        jumlahBulanJuli;
+      break;
+    case "Agustus":
+      jumlahBulanAgustus = countTanggal;
+      d =
+        jumlahBulanJanuari +
+        jumlahBulanFebruari +
+        jumlahBulanMaret +
+        jumlahBulanApril +
+        jumlahBulanMei +
+        jumlahBulanJuni +
+        jumlahBulanJuli +
+        jumlahBulanAgustus;
+      break;
+    case "September":
+      jumlahBulanSeptember = countTanggal;
+      d =
+        jumlahBulanJanuari +
+        jumlahBulanFebruari +
+        jumlahBulanMaret +
+        jumlahBulanApril +
+        jumlahBulanMei +
+        jumlahBulanJuni +
+        jumlahBulanJuli +
+        jumlahBulanAgustus +
+        jumlahBulanSeptember;
+      break;
+    case "Oktober":
+      jumlahBulanOktober = countTanggal;
+      d =
+        jumlahBulanJanuari +
+        jumlahBulanFebruari +
+        jumlahBulanMaret +
+        jumlahBulanApril +
+        jumlahBulanMei +
+        jumlahBulanJuni +
+        jumlahBulanJuli +
+        jumlahBulanAgustus +
+        jumlahBulanSeptember +
+        jumlahBulanOktober;
+      break;
+    case "November":
+      jumlahBulanNovember = countTanggal;
+      d =
+        jumlahBulanJanuari +
+        jumlahBulanFebruari +
+        jumlahBulanMaret +
+        jumlahBulanApril +
+        jumlahBulanMei +
+        jumlahBulanJuni +
+        jumlahBulanJuli +
+        jumlahBulanAgustus +
+        jumlahBulanSeptember +
+        jumlahBulanOktober +
+        jumlahBulanNovember;
+      break;
+    case "Desember":
+      jumlahBulanDesember = countTanggal;
+      d =
+        jumlahBulanJanuari +
+        jumlahBulanFebruari +
+        jumlahBulanMaret +
+        jumlahBulanApril +
+        jumlahBulanMei +
+        jumlahBulanJuni +
+        jumlahBulanJuli +
+        jumlahBulanAgustus +
+        jumlahBulanSeptember +
+        jumlahBulanOktober +
+        jumlahBulanNovember +
+        jumlahBulanDesember;
+      break;
+  }
+  let hasil = (y + d + f) % 7;
+
+  switch (hasil) {
+    case 0:
+      hasil = "Jum'at";
+      break;
+    case 1:
+      hasil = "Sabtu";
+      break;
+    case 2:
+      hasil = "Minggu";
+      break;
+    case 3:
+      hasil = "Senin";
+      break;
+    case 4:
+      hasil = "Selasa";
+      break;
+    case 5:
+      hasil = "Rabu";
+      break;
+    case 6:
+      hasil = "Kamis";
+      break;
+  }
+
+  tebakHari = hasil;
 };
 
 const onSubmit = () => {
   const count = countTanggal;
   const hasil =
-    "Tanggal lahir kamu adalah " +
+    "Tanggal lahir kamu adalah hari " +
+    tebakHari +
+    " " +
     countTanggal +
     " " +
     countBulan +
